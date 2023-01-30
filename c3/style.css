@@ -1,0 +1,51 @@
+.cont {
+  margin: auto;
+}
+
+.image {
+  opacity: 0;
+}
+
+button {
+  height: 100px;
+  width: 300px;
+  background-color: purple;
+  font-size: 40px;
+  border-radius: 50px;
+  transition: hover 1s 0.1s linear 1;
+  /* animation: click 1s li ; */
+  text-align: center;
+}
+
+button:focus {
+  animation: click 1s linear 1;
+}
+
+button:focus img {
+  animation: opacity 1s 0.1s linear 1;
+}
+
+@keyframes click {
+  from {
+    height: 100px;
+    width: 300px;
+    border-radius: 50px;
+  }
+
+  to {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

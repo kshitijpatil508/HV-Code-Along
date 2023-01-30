@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text {
+        background-color: orange;
+        padding: 20px;
+        border-bottom: 5px solid black;
+        display: inline-block;
+      }
+
+      #h {
+        animation: waveeffect 1.8s 0s infinite forwards;
+      }
+      #e {
+        animation: waveeffect 1.8s 0.2s infinite forwards;
+      }
+
+      #r {
+        animation: waveeffect 1.8s 0.4s infinite forwards;
+      }
+
+      #o {
+        animation: waveeffect 1.8s 0.6s infinite forwards;
+      }
+
+      #v {
+        animation: waveeffect 1.8s 0.8s infinite forwards;
+      }
+      #i {
+        animation: waveeffect 1.8s 1s infinite forwards;
+      }
+
+      #r2 {
+        animation: waveeffect 1.8s 1.2s infinite forwards;
+      }
+
+      #e2 {
+        animation: waveeffect 1.8s 1.4s infinite forwards;
+      }
+      #d {
+        animation: waveeffect 1.8s 1.6s infinite forwards;
+      }
+
+      @keyframes waveeffect {
+        0% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-50px);
+          border-bottom: 20px solid aqua;
+        }
+
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <span class="wave">
+      <span><div class="text h" id="h">H</div></span>
+      <span><div class="text e" id="e">E</div></span>
+      <span><div class="text r" id="r">R</div></span>
+      <span><div class="text o" id="o">O</div></span>
+      <span><div class="text v" id="v">V</div></span>
+      <span><div class="text i" id="i">I</div></span>
+      <span><div class="text r2" id="r2">R</div></span>
+      <span><div class="text e2" id="e2">E</div></span>
+      <span><div class="text d" id="d">D</div></span>
+    </span>
+  </body>
+</html>
