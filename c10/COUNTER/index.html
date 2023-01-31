@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+        quam!
+      </p>
+    </div>
+
+    <script>
+      var el = document.createElement("p");
+      var content = document.createTextNode("DOM paragraph");
+      el.appendChild(content);
+      var loc = document.getElementById("para");
+      document.getElementById("main").appendChild(el);
+      //   document.getElementById("main").removeChild("para");
+
+      let loc1 = document.getElementById("main");
+
+      loc1.style.background = "red";
+
+      //   removing child
+
+      var parent = document.getElementById("main");
+      var newElement = document.createElement("p");
+
+      var textNode = document.createTextNode("New Text Node");
+      var child = document.getElementById("para");
+
+      newElement.appendChild(textNode);
+
+      parent.replaceChild(newElement, child);
+    </script>
+  </body>
+</html>
